@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat";
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  
+    /* background-image: linear-gradient(to right,#ff0157 , #fff ); */
+  }
+  
+  
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Verdana, sans-serif;
+    margin: 0px;
+    background-image: linear-gradient(to right, #fff, blue, #fff);
+    min-height: 1000px;
+  }
+
+  .img{
+      height: 60px;
+      width:60px;
+
+  }
+  .html {
+    scroll-behavior: smooth;
+  }
+  
+  .banner {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+  }
+  .banner .content {
+    max-width: 900px;
+    text-align: center;
+  }
+  
+  .banner .content h2 {
+    font-size: 4em;
+    width: 800px;
+    color: #fff;
+    font-family: "Satisfy", cursive;
+    font-family: "The Nautigal", cursive;
+  }
+  .banner .content p {
+    padding: 20px;
+    font-size: 1.1em;
+    color: #fff;
+  }
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: top 0.3s;
+    opacity: 0.9;
+    background-color: #000;
+  }
+  
+  header .sticky {
+    background: #fff;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  }
+  
+  header .logo {
+    color: #fff;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  header .logo span {
+    color: blue;
+  } 
+  header .navigation {
+    position: relative;
+    display: flex;
+  }
+  header .navigation li {
+    list-style: none;
+    margin-left: 30px;
+  }
+  header .navigation li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+  }
+  header .sticky .navigation li a {
+    color: #111;
+  }
+  
+  header .navigation li a:hover {
+    color: blue;
+  }
+  
+  .section .banner .content h2 {
+    font-family: "Comforter Brush", cursive;
+  }
+  
+  section {
+    padding: 0px;
+  }
+
+  .footer {
+    background-color: #000;
+    padding: 20px 0;
+    opacity: 0.85;
+  }
+  
+  .footer-col {
+    display: inline-block;
+    width: 25%;
+    padding: 0 15px 0 50px;
+  }
+
+
+  .footer-col h4 {
+    font-size: 18px;
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 1000;
+    position: relative;
+    align-content: space-between;
+  }
+  
+  .footer-col h4::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #ffffff;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+  }
+  
+  .footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    color: blue;
+    display: block;
+    transition: all 0.3s ease;
+    width: 300px;
+  }
+  .footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
+  }
+
+
+  .smedia h5 {
+    display: inline-block;
+    padding: 0 0 0 900px;
+    margin: 10px;
+    align-items: center;
+  }
+  
+  
