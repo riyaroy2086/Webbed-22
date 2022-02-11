@@ -1,0 +1,74 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <form>
+        <table cellspacing="17" cellpadding="9">
+            <caption>USER REGISTRATION FORM</caption>
+            <tr>
+                <th>Full Name <sup style="color:red;">*</sup>:</th>
+                <td><input required type="text" placeholder="Enter your Full Name"></td>
+            </tr>
+            <tr>
+                <th>Email <sup style="color:red;">*</sup>:</th>
+                <td><input required type="email" name="email" id="" placeholder="Enter your Email ID" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" oninvalid="setCustomValidity('Please Enter a valid mail id')" onchange="try{setCustomValidity('')}catch(e){}"></td>
+            </tr>
+            <tr>
+                <th>Gender :</th>
+                <td>
+                    <input type="radio" name="gen" id="" checked>Male&nbsp;
+                    <input type="radio" name="gen" id="" >Female
+                </td>
+            </tr>
+            <tr>
+                <th>Phone <sup style="color:red;">*</sup>:</th>
+                <td><input required type="tel" placeholder="Enter 10 digit Phone Number" onkeypress="return onlyNumberKey(event)" pattern="[0-9]{10}" oninvalid="setCustomValidity('Phone number must be a 10 digits only')" onchange="try{setCustomValidity('')}catch(e){}">
+                </td>
+            </tr>
+            <tr>
+                <th>Address :</th>
+                <td><textarea placeholder="Enter your text here" rows="3" cols="20"></textarea></td>
+                
+            </tr>
+            <tr>
+                <th>Favourite Destination(s):</th>
+                <td>
+                    <input type="checkbox" name="gen" id="" checked>Kolkata&nbsp;
+                    <input type="checkbox" name="gen" id="">Agra<br/><br/>
+                    <input type="checkbox" name="gen" id="">Varansi&nbsp;
+                    <input type="checkbox" name="gen" id="">Goa
+                </td>
+            </tr>
+            <tr>
+                <th>No. of persons <sup style="color:red;">*</sup>:</th>
+                <td><input required type="number" name="persons" placeholder="Enter No. of Persons" onkeypress="return onlyNumberKey(event)">
+                </td>
+            </tr>
+            <tr>
+                <th>Travel Package (in Days) <sup style="color:red;">*</sup>:</th>
+                <td><input required type="number" name="days" placeholder="Enter No. of Days" onkeypress="return onlyNumberKey(event)"></td>
+            </tr>
+            <tr>
+                <th>Password <sup style="color:red;">*</sup>:</th>
+                <td><input required type="password" name="password" placeholder="6-8 Characters" minlength="6" maxlength="8" oninvalid="setCustomValidity('Password must be 6 to 8 digits only')" onchange="try{setCustomValidity('')}catch(e){}" id="pass"></td>
+            </tr>
+            <tr>
+                <th>Confirm password <sup style="color:red;">*</sup>:</th>
+                <td><input required type="password" name="password" onchange="checkWithPass()" placeholder="Type your password again" id="confirmPass"></td>
+            </tr>
+            <tr>
+                <th colspan="2">
+                    <pre
+                        style="margin-top:3rem;"><button type="submit" value="Send" onsubmit="alert('Successfully Sumbitted')"> SUBMIT</button>    <button type="reset" value="Clear">RESET</button></pre>
+                </th>
+            </tr>
+
+        </table>
+    </form>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
