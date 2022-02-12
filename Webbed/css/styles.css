@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: radial-gradient(darkblue 10%, rgb(74, 139, 224), white);
+}
+
+div {
+    border: 2px solid black;
+}
+
+table {
+    width: 35%;
+    margin: 3rem auto;
+    color: white;
+    font-size: 18px;
+}
+input {
+    font-size: 18x;
+    outline:none;
+    border:3px solid darkblue;
+    border-radius: 6px;
+    padding-left:2px;
+}
+
+caption {
+    text-decoration: underline;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 25px;
+    color: darkblue;
+}
+
+button {
+    width: 100px;
+    color: darkblue;
+    padding: 0.5rem 0.5rem;
+    font-weight: bolder;
+    border: 3px solid darkblue;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: darkblue;
+    color: white;
+    border: 3px solid white;
+}
+
+footer {
+    background: darkblue;
+    color: white;
+    margin-top: 3rem;
+}
+
+.center {
+    padding: 1rem 0;
+    text-align: center;
+}
